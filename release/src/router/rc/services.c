@@ -8550,15 +8550,15 @@ int start_quagga(void)
 		fprintf(fp, "hostname %s\n", zebra_hostname);
 		fprintf(fp, "password %s\n", zebra_passwd);
 		fprintf(fp, "enable password %s\n", zebra_enpasswd);
-		fprintf(fp, "log file /etc/zebra.log\n");
+		fprintf(fp, "log file /etc/zebra.log informational\n");
 		fclose(fp);
 		eval("zebra", "-d", "-f", "/etc/zebra.conf");
 	}
 	if ((fp2 = fopen("/etc/ripd.conf", "w"))){
 		fprintf(fp2, "hostname %s\n", rip_hostname);
 		fprintf(fp2, "password %s\n", rip_passwd);
-		fprintf(fp2, "debug rip events\n");
-		fprintf(fp2, "debug rip packet\n");
+		//fprintf(fp2, "debug rip events\n");
+		//fprintf(fp2, "debug rip packet\n");
 		fprintf(fp2, "router rip\n");
 		fprintf(fp2, " version 2\n");
 #if !defined(BLUECAVE)
@@ -8572,7 +8572,7 @@ int start_quagga(void)
 		fprintf(fp2, " passive-interface eth1.2\n");
 		fprintf(fp2, " passive-interface eth1.3\n");
 #endif
-		fprintf(fp2, "log file /etc/ripd.log\n");
+		fprintf(fp2, "log file /etc/ripd.log informational\n");
 		fprintf(fp2, "log stdout\n");
 		fclose(fp2);
 		eval("ripd", "-d", "-f", "/etc/ripd.conf");
