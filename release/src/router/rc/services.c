@@ -3914,7 +3914,7 @@ stop_misc(void)
 	stop_mdns();
 #endif
 #if !(defined(RTCONFIG_QCA) || defined(RTCONFIG_RALINK) || defined(RTCONFIG_REALTEK))
-	stop_erp_monitor();
+	//stop_erp_monitor();
 #endif
 #ifdef RTCONFIG_CROND
 	stop_cron();
@@ -7591,7 +7591,7 @@ start_services(void)
 #endif
 
 #if !(defined(RTCONFIG_QCA) || defined(RTCONFIG_RALINK) || defined(RTCONFIG_REALTEK))
-	start_erp_monitor();
+	//start_erp_monitor();
 #endif
 #ifdef RTCONFIG_HD_SPINDOWN
 #ifdef LINUX26
@@ -7627,7 +7627,7 @@ stop_services(void)
 	stop_adtbw();
 #endif
 #if !(defined(RTCONFIG_QCA) || defined(RTCONFIG_RALINK) || defined(RTCONFIG_REALTEK))
-	stop_erp_monitor();
+	//stop_erp_monitor();
 #endif
 #ifdef RTCONFIG_INTERNAL_GOBI
 	stop_lteled();
@@ -8004,7 +8004,7 @@ stop_services_mfg(void)
 	stop_ptcsrv();
 #endif
 #if !(defined(RTCONFIG_QCA) || defined(RTCONFIG_RALINK) || defined(RTCONFIG_REALTEK))
-	stop_erp_monitor();
+	//stop_erp_monitor();
 #endif
 #ifdef RTCONFIG_NOTIFICATION_CENTER
 	stop_notification_center();
