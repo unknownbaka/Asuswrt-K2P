@@ -896,7 +896,7 @@ static const applets_t applets[] = {
 	{ "le_acme",				le_acme_main			},
 #endif
 #if !(defined(RTCONFIG_QCA) || defined(RTCONFIG_RALINK) || defined(RTCONFIG_REALTEK))
-	{ "erp_monitor",		erp_monitor_main		},
+//	{ "erp_monitor",		erp_monitor_main		},
 #endif
 #if defined(MAPAC2200)
 	{ "dpdt_ant",			dpdt_ant_main		},
