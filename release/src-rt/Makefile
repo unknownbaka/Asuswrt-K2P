@@ -2004,9 +2004,9 @@ define RouterOptions
 		sed -i "/RTCONFIG_NOTIFICATION_CENTER/d" $(1); \
 		echo "RTCONFIG_NOTIFICATION_CENTER=y" >>$(1); \
 	fi; \
-	if [ "$(PROTECTION_SERVER)" = "y" ]; then \
+	if [ "$(NO_PROTECTION_SERVER)" = "y" ]; then \
 		sed -i "/RTCONFIG_PROTECTION_SERVER/d" $(1); \
-		echo "RTCONFIG_PROTECTION_SERVER=y" >>$(1); \
+		echo "# RTCONFIG_PROTECTION_SERVER is not set" >>$(1); \
 	fi; \
 	if [ "$(WLCEVENTD)" = "y" ] || [ "$(CONFIG_BCMWL5)" = "y" ]; then \
 		sed -i "/RTCONFIG_WLCEVENTD/d" $(1); \
