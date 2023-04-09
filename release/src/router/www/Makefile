@@ -788,7 +788,6 @@ ifeq ($(BUILD_NAME),$(filter $(BUILD_NAME), RT-AC1200G+))
 	rm -rf $(INSTALLDIR)/www/images/New_ui/networkmap/icon_guest2.svg
 	rm -rf $(INSTALLDIR)/www/images/New_ui/networkmap/icon_guest3.svg
 	rm -rf $(INSTALLDIR)/www/images/New_ui/coolerstatus.png
-	rm -rf $(INSTALLDIR)/www/images/New_ui/network_config.png
 	rm -rf $(INSTALLDIR)/www/images/New_ui/open_NAT.svg
 	rm -rf $(INSTALLDIR)/www/images/New_ui/re.jpg
 endif
