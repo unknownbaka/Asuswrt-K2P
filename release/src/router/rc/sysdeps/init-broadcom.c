@@ -1491,7 +1491,7 @@ void generate_switch_para(void)
 		case MODEL_RTAC1200G:
 		case MODEL_RTAC1200GP:
 		{				/* WAN L1 L2 L3 L4 CPU */
-			const int ports[SWPORT_COUNT] = { 0, 1, 2, 3, 4, 8 };
+			const int ports[SWPORT_COUNT] = { 4, 0, 1, 2, 3, 8 };
 			int wancfg = (!nvram_match("switch_wantag", "none")&&!nvram_match("switch_wantag", "")&&!nvram_match("switch_wantag", "hinet")) ? SWCFG_DEFAULT : cfg;
 
 			wan_phyid = ports[0];	// record the phy num of the wan port on the case
