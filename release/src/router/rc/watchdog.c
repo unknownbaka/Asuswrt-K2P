@@ -152,9 +152,11 @@ static int watchdog_period = 0;
 #ifdef WATCHDOG_PERIOD2
 static int watchdog_period2 = 0;
 #endif
+#if 0
 #ifdef RTCONFIG_BCMARM
 static int chkusb3_period = 0;
 static int u3_chk_life = 6;
+#endif
 #endif
 static int btn_pressed = 0;
 static int btn_count = 0;
@@ -6961,6 +6963,7 @@ void watchdog(int sig)
 	watchdog_period2 = (watchdog_period2 + 1) % 10;
 #endif
 
+#if 0
 #ifdef RTCONFIG_BCMARM
 	if (u3_chk_life < 20) {
 		chkusb3_period = (chkusb3_period + 1) % u3_chk_life;
@@ -6978,6 +6981,7 @@ void watchdog(int sig)
 			u3_chk_life *= 2;
 		}
 	}
+#endif
 #endif
 
 #ifdef BTN_SETUP
