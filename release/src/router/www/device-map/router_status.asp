@@ -387,7 +387,7 @@ function get_ethernet_ports() {
 						var newRuleArray = new Array();
 						var port_name = prop;
 						if(wanCount != undefined) {
-							if(port_name.substr(0, 3) == "WAN") {
+							if(port_name.substr(4, 1) == "4") {
 								if(parseInt(wanCount) > 1) {
 									var port_idx = port_name.split(" ");
 									port_name = port_idx[0] + " " + (parseInt(port_idx[1]) + 1);
@@ -395,6 +395,8 @@ function get_ethernet_ports() {
 								else {
 									port_name = "WAN";
 								}
+							} else {
+								port_name = "LAN " + port_name.split(" ")[1];
 							}
 						}
 						newRuleArray.push(port_name);
