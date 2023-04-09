@@ -290,7 +290,7 @@ OBJS += init-lantiq.o wps-lantiq.o lantiq.o ate-lantiq.o lantiq-wave.o
 endif
 
 OBJS += $(if $(wildcard private.c),private.o,prebuild/private.o)
-OBJS += $(if $(wildcard conn_diag.c),conn_diag.o,prebuild/conn_diag.o)
+#OBJS += $(if $(wildcard conn_diag.c),conn_diag.o,prebuild/conn_diag.o)
 
 # TODO, speedtest
 ifeq ($(RTCONFIG_SPEEDTEST),y)

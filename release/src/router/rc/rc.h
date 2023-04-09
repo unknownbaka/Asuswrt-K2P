@@ -1294,7 +1294,7 @@ extern int update_wan_leds(int wan_unit);
 static inline int update_wan_leds(int wan_unit) { update_failover_led(); return 0; }
 #endif
 extern int wanduck_main(int argc, char *argv[]);
-extern int conn_diag_main(int argc, char *argv[]);
+//extern int conn_diag_main(int argc, char *argv[]);
 
 // tcpcheck.c
 extern int setupsocket(int sock);
