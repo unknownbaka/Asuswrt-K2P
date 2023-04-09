@@ -1,19 +1,19 @@
 /* CSS Document */
-.buttonok {width:52px; font-family:Verdana; font-size:11px; line-height:25px; text-align:center;}
+.buttonok {width:52px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size:11px; line-height:25px; text-align:center;}
 .buttonok a {height:28px; text-decoration: none;}
 .buttonok a:link, .buttonok a:visited {
 	color: #002157;	display: block;
 	background: url(images/button-ok.gif);}
 .buttonok a:hover,.buttonok a:active {	color:#ffffff;	background:url(images/button-ok.gif) 0 -28px;}
 
-.buttonquit {width:100px; font-family:Verdana; font-size:11px; line-height:20px; text-align:center;  }
+.buttonquit {width:100px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size:11px; line-height:20px; text-align:center;  }
 .buttonquit a { height:31px; text-decoration:none; }
 .buttonquit a:link, .buttonquit a:visited {
 	color:#002157; display:block; background:url(images/button-quit.gif) no-repeat; text-decoration:none;}
 .buttonquit a:hover,.buttonquit a:active {	color: #ffffff;	background: url(images/button-quit.gif) no-repeat 0 -31px; text-decoration:none;}
 
 .top-message {
-	font-family:Arial, Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:11px;
 	color:#000000;
 	border-left:2px dotted #97A9B2;
@@ -26,7 +26,7 @@
 }
 
 .top-messagebold {
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:11px;
 	color:#FFF;
 	line-height:180%;
@@ -34,7 +34,7 @@
 }
 
 .top-input {
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:11px;
 	color:#FFFFFF;
 	line-height:200%;
@@ -47,7 +47,7 @@
 
 #top-logo {
 	font-size:17px;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-weight:bolder;
 	font-stretch:wider;
 	color:#FFFFFF;
@@ -60,7 +60,7 @@
 .FormTitle{
 	line-height:160%;
 	font-size:12px;
-	font-family:Arial, Verdana, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	border:1px solid #4D595D;
 	color:white;
 	position:relative;
@@ -86,12 +86,12 @@
 }
 .FormTable{
 	font-size:12px;
-	font-family:Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	border: 1px solid #000000;
 	border-collapse: collapse;
 }
 .FormTable th{
-	font-family:Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-color:#1F2D35;
 	color:#FFFFFF	;	/*Viz add*/
 	font-weight:normal;
@@ -149,12 +149,12 @@
 .FormTable_table{
 	margin-top:10px;
 	font-size:12px;
-	font-family:Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	border: 1px solid #222;
 	border-collapse: collapse;
 }
 .FormTable_table th{
-	font-family:Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-color:#1f2d35;
 	font-weight:normal;
 	text-align:center;
@@ -218,12 +218,12 @@
 .FormTable_NWM{
 	/*margin-top:10px;*/
 	font-size:12px;
-	font-family:Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	border: 1px solid #222;
 	border-collapse: collapse;
 }
 .FormTable_NWM th{
-	font-family:Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-color:#1f2d35;
 	font-weight:normal;
 	text-align:center;
@@ -287,13 +287,13 @@
 
  .table_text{
  	color:#FFFFFF;
-	font-family:Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	text-decoration:none;
  }
 /* for Table */
 .input{
 	color:#FFFFFF;
-	font-family: Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
 	padding-left:2px;
 }
@@ -305,7 +305,7 @@
 	border-bottom-width:1px;
 	border-color:#888;
 	color:#FFFFFF;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:13px;
 }
 
@@ -321,7 +321,7 @@
 	color:#FFFFFF;
 	*color:#000;
 	font-size:13px;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 }
 .input_option_left{
 	float: right;
@@ -333,7 +333,7 @@
 	border-color:#888;
 	color:#FFFFFF;
 	margin:8px 10px 0 0;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:13px;
 }
 
@@ -344,7 +344,7 @@
 	width:345px;
 	line-height:23px \9;	/*IE*/
 	font-size:12px;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-image:url(images/New_ui/inputbg.png);
 	border-width:0;
 	color:#FFFFFF;
@@ -356,7 +356,7 @@
 	width:315px;
 	line-height:23px \9;	/*IE*/
 	font-size:12px;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-image:url(images/New_ui/inputbg.png);
 	border-width:0;
 	color:#FFFFFF;
@@ -368,7 +368,7 @@
 	width:235px;
 	line-height:23px \9;	/*IE*/
 	font-size:12px;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-image:url(images/New_ui/inputbg.png);
 	border-width:0;
 	color:#FFFFFF;
@@ -380,7 +380,7 @@
 	width:202px;
 	line-height:23px \9;	/*IE*/
 	font-size:12px;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-image:url(images/New_ui/inputbg.png);
 	border-width:0;
 	color:#FFFFFF;
@@ -392,7 +392,7 @@
 	width:180px;
 	line-height:23px \9;	/*IE*/
 	font-size:12px;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-image:url(images/New_ui/inputbg.png);
 	border-width:0;
 	color:#FFFFFF;
@@ -404,7 +404,7 @@
 	width:160px;
 	line-height:23px \9;	/*IE*/
 	font-size:12px;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-image:url(images/New_ui/inputbg.png);
 	border-width:0;
 	color:#FFFFFF;
@@ -416,7 +416,7 @@
 	width:120px;
 	line-height:23px \9;	/*IE*/
 	font-size:12px;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-image:url(images/New_ui/inputbg.png);
 	border-width:0;
 	color:#FFFFFF;
@@ -428,7 +428,7 @@
 	width:90px;
 	line-height:23px \9;	/*IE*/
 	font-size:12px;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-image:url(images/New_ui/inputbg.png);
 	border-width:0;
 	color:#FFFFFF;
@@ -440,7 +440,7 @@
 	width:50px;
 	line-height:23px \9;	/*IE*/
 	font-size:12px;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-image:url(images/New_ui/inputbg.png);
 	border-width:0;
 	color:#FFFFFF;
@@ -452,7 +452,7 @@
 	width:28px;
 	line-height:23px \9;	/*IE*/
 	font-size:12px;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-image:url(images/New_ui/inputbg.png);
 	border-width:0;
 	color:#FFFFFF;
@@ -464,7 +464,7 @@
 	width:125px;
 	line-height:23px \9;	/*IE*/
 	font-size:12px;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	background-image:url(images/New_ui/inputbg.png);
 	border-width:0;
 	color:#FFFFFF;
@@ -478,7 +478,7 @@
  	border:0;
  	color: #FFFFFF;
 	height:34px;
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
 	/*margin-right:5px;
 	margin-left:5px;*/
@@ -505,7 +505,7 @@
   border:0;
   color: #FFFFFF;
 	height:33px;
-	font-family: Verdana, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
   padding:0 .70em 0 .70em;
  	width:122px;
@@ -534,7 +534,7 @@
   border:0;
   color: #333333;
 	height:33px;
-	font-family: Verdana, Bold, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
   padding:0 .70em 0 .70em;
  	width:122px;
@@ -571,7 +571,7 @@
   border:0;
   color: #FFFFFF;
 	height:34px;
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
  	width:155px;
   overflow:visible;
@@ -585,7 +585,7 @@
   border:0;
   color: #FFFFFF;
 	height:34px;
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
  	width:155px;
   overflow:visible;
@@ -601,7 +601,7 @@
   border:0;
   color: #333333;
 	height:34px;
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
  	width:155px;
   overflow:visible;
@@ -615,7 +615,7 @@
   border:0;
   color: #333333;
 	height:34px;
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
  	width:155px;
   overflow:visible;
@@ -641,7 +641,7 @@
   border:0;
   color: #FFFFFF;
 	height:33px;
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
   padding:0 .70em 0 .70em;
  	width:91px;
@@ -666,7 +666,7 @@
 	border: 1px outset #333;
 	background:url(images/sbtn0.gif) #FFCC66;
 	height:20px;
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
 	margin-right:5px;
 	margin-left:5px;
@@ -693,7 +693,7 @@ form{
 
 .short_btn {
 	width: 105px;
-	font-family: Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size : 13px;
 	text-align:center;
 	line-height:25px;
@@ -707,7 +707,7 @@ form{
 
 .upnp_btn {
 	width: 150px;
-	font-family: Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size : 13px;
 	text-align:center;
 	line-height:25px;
@@ -729,7 +729,7 @@ form{
 }
 
 .popTable thead span{
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
 	font-weight:bold;
 	color:#000000;
@@ -747,7 +747,7 @@ form{
 	text-align:left;
 }
 .popTable tbody th{
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
 	text-align:right;
 	padding-right:5px;
@@ -756,7 +756,7 @@ form{
 }
 .popTable tbody td{
 	color: #666666;
-	font-family: Verdana, Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:10pt;
 	padding:4px;
 }
@@ -765,7 +765,7 @@ form{
 	color:#333333;
 	border:1px inset #000;
 	background: url(images/bg_ipt_field.gif) repeat-x #FFF;
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:11px;
 	padding-left:2px;
 	font-weight:bold;
@@ -775,7 +775,7 @@ form{
 	border:0px;
 	color:#FFFFFF;
 	background-color:#475A5F;
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:11px;
 	padding-left:2px;
 	font-weight:bold;
@@ -809,7 +809,7 @@ form{
 	background-color:#EFEFEF;
 	color:#FFF;
 	font-size:12px;
-	font-family:Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 }
 #QoSList_Block div:hover {
 	background-color:#3366FF;
@@ -857,7 +857,7 @@ form{
 .list_table td{
 	border: 1px solid #000000;
 	border-collapse: collapse;
-	font-family: Lucida Console;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	height:25px;
 }
 
@@ -865,7 +865,7 @@ form{
 	height:25px;
 	width:350px;
 	color:#FFFFFF;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	text-align:center;
 	font-size:12px;
 }
@@ -873,7 +873,7 @@ form{
 	height:25px;
 	width:110px;
 	color:#FFFFFF;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	text-align:center;
 	font-size:12px;
 }
@@ -881,7 +881,7 @@ form{
 	height:25px;
 	width:90px;
 	color:#FFFFFF;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	text-align:center;
 	font-size:12px;
 }
@@ -889,7 +889,7 @@ form{
 	height:25px;
 	width:50px;
 	color:#FFFFFF;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	text-align:center;
 	font-size:12px;
 }
@@ -897,7 +897,7 @@ form{
 	height:25px;
 	width:28px;
 	color:#FFFFFF;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	text-align:center;
 	font-size:12px;
 }
@@ -917,7 +917,7 @@ form{
 .IPaddr{
 	font-size:12px;
 	font-weight:normal;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	border: 2px inset #F4F4F4;
 	background-color:#4D595D;
 	/*background-image:url(/images/New_ui/inputbg.png);*/
@@ -928,7 +928,7 @@ form{
 	border:0px solid #CCC;
 	color:white;
 	font-size:12px;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	width:27px;
 	text-align:center;
 	margin:0px auto;
@@ -939,7 +939,7 @@ form{
 .inputinfo{
 	border:0px;
 	background-color: #A7D2E2;
-	font-family:Verdana;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:11px;
 	padding-left:2px;
 	font-weight:bold;
@@ -1031,7 +1031,7 @@ form{
 /* CSS Document */
 body{
 color:#FFFFFF;
-font-family:Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 font-size:13px;
 color:#FFFFFF;
 }
@@ -1149,7 +1149,7 @@ color:#FFFFFF;
 	display: block;
 	padding: 5px 4px 5px 12px;
 	line-height: 20px;
-	font-family: Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size: 13px;
 }
 .tab_NW:hover{
@@ -1161,7 +1161,7 @@ color:#FFFFFF;
 
 .tabclick_NW {
 	font-weight: bolder;
-	font-family: Verdana, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
   color: White;
   display: block;
   float: left;
@@ -1179,7 +1179,7 @@ color:#FFFFFF;
 	font-weight: bolder;
 	white-space:nowrap;
 	font-weight: bolder;
-	font-family: Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
     display: block;
     padding: 5px 4px 5px 12px;
     line-height: 20px;
@@ -1200,7 +1200,7 @@ color:#FFFFFF;
 	display: table-cell;
 	cursor: pointer;
 	font-weight: bolder;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size: 13px;
 	vertical-align: middle;
 	height: inherit;
@@ -1282,7 +1282,7 @@ margin-top:5px;
 
 .formfonttitle{
 text-shadow: 1px 1px 0px black;
-font-family:Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 font-size:16px;
 color:#FFFFFF;
 margin-left:5px;
@@ -1290,7 +1290,7 @@ margin-bottom:10px;
 font-weight: bolder;
 }
 .formfonttitle_nwm{
-font-family:Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 font-size:12px;
 color:#FFFFFF;
 margin-left:5px;
@@ -1299,14 +1299,14 @@ font-weight: bolder;
 }
 
 .formfontcontent{
-font-family:Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 font-size:12px;
 color:#FFFFFF;
 padding-top:1px;
 }
 
 .formfontdesc{
-	font-family: Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:13px;
 	color:#FFFFFF;
 	margin-left:5px;
@@ -1314,7 +1314,7 @@ padding-top:1px;
 }
 
 .formlinkfont{
-	font-family: Arial, Helvetica, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:13px;
 	color:#FFFFFF;
 	text-decoration:underline;
@@ -1878,7 +1878,7 @@ padding-top:1px;
 	background-color:#065280;
 }
 .panel_folder{
-	font-family: Courier, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	width:500px;
 	position:absolute;
 	z-index:2000;
@@ -2074,7 +2074,7 @@ padding-top:1px;
 	padding-left:30px;
 	height:30px;
 	width:31px;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
 	line-height:25px;
 }
@@ -2087,7 +2087,7 @@ padding-top:1px;
 	height:30px;
 	width:31px;
 	cursor: pointer;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
 	line-height:25px;
 }
@@ -2098,7 +2098,7 @@ padding-top:1px;
 	padding-left:30px;
 	height:30px;
 	width:31px;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	font-size:12px;
 	line-height:25px;
 }

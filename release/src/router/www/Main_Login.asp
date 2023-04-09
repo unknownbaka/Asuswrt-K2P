@@ -11,7 +11,7 @@
 <title>ASUS Login</title>
 <style>
 body{
-	font-family: Arial, MS UI Gothic, MS P Gothic, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 }
 .wrapper{
 	background:url(images/New_ui/login_bg.png) #283437 no-repeat;
