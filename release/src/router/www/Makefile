@@ -91,7 +91,7 @@ ifeq ($(RTCONFIG_AUTODICT), y)
 	# now dict prep will generate necessary dict files to dest dir
 	rm -f $(INSTALLDIR)/www/*.dict
 	# Tool dir , dictctrl.txt , modem name , header mapping , src , dst , output msg file
-	$(ASUSWRTTOOLSDIR)/LnxDictPrep $(ASUSWRTTOOLSDIR) dictctrl.txt $(BUILD_NAME) HdrMapping.txt . $(INSTALLDIR)/www $(SRCBASE)/image/dictenum.txt $(SRCBASE)/image/dict_prep.txt
+	$(ASUSWRTTOOLSDIR)/LnxDictPrep $(ASUSWRTTOOLSDIR) dictctrl.txt K2P HdrMapping.txt . $(INSTALLDIR)/www $(SRCBASE)/image/dictenum.txt $(SRCBASE)/image/dict_prep.txt
 	# generate sh file for clear up html and dict auto enum
 	# this is for compression
 	$(ASUSWRTTOOLSDIR2)/genshfile.pl $(ASUSWRTTOOLSDIR2) $(INSTALLDIR)/www $(SRCBASE)/image/compress.sh $(SRCBASE)/image/dictenum.txt $(SRCBASE)/image/output2.txt $(BUILD_NAME) $(SRCBASE)/image/output3.txt
@@ -99,7 +99,7 @@ ifeq ($(RTCONFIG_AUTODICT), y)
 	sh $(SRCBASE)/image/compress.sh
 else
 	for F in $(wildcard *.dict); do \
-		./gendict.pl $(BUILD_NAME) $$F $(INSTALLDIR)/www/$$F; \
+		./gendict.pl K2P $$F $(INSTALLDIR)/www/$$F; \
 	done
 endif
 	echo " WWW FOR $(BUILD_NAME)"
