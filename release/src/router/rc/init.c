@@ -8489,8 +8489,8 @@ int init_nvram(void)
 			nvram_set("xhci_ports", "2-1");
 		else
 			nvram_unset("xhci_ports");
-		nvram_set("ehci_ports", "1-1");
-		nvram_set("ohci_ports", "1-1");
+		nvram_unset("ehci_ports");
+		nvram_unset("ohci_ports");
 
 		if (!nvram_get("ct_max"))
 			nvram_set("ct_max", "300000");
