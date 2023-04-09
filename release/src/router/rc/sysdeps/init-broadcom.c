@@ -2586,7 +2586,7 @@ void init_syspara(void)
 				nvram_set("et0macaddr", "00:22:15:A5:03:00");
 			if (!nvram_get("sb/1/macaddr"))	// (5GHz)
 				nvram_set("sb/1/macaddr", "00:22:15:A5:03:04");
-			nvram_set("0:macaddr", nvram_safe_get("et0macaddr")); // (2.4GHz)
+			//nvram_set("0:macaddr", nvram_safe_get("et0macaddr")); // (2.4GHz)
 
 		default:
 #ifdef RTCONFIG_RGMII_BRCM5301X
