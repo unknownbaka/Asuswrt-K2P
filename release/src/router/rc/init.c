@@ -7093,13 +7093,14 @@ int init_nvram(void)
 		nvram_unset("xhci_ports");
 		nvram_set("ehci_ports", "1-1");
 		nvram_set("ohci_ports", "2-1");
+		nvram_set_int("webs_state_flag", 0);
 //		if (!nvram_get("ct_max"))
 			nvram_set("ct_max", "250000");
 		add_rc_support("mssid 2.4G 5G");
 		add_rc_support("switchctrl"); // broadcom: for jumbo frame only
 		add_rc_support("manual_stb");
 		add_rc_support("WIFI_LOGO");
-		add_rc_support("update");
+		add_rc_support("noupdate");
 		if (model == MODEL_RTAC1200GP){
 			add_rc_support("meoVoda");
 			add_rc_support("movistarTriple");
