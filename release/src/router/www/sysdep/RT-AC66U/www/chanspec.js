@@ -322,7 +322,7 @@ function wl_chanspec_list_change(){
 					var _cur_channel = parseInt(wl_channel_list_5g_2[i]);
 					
 					for(j=0;j<wl2.channel_80m.length;j++){
-						if(wl2.channel_80m[j].indexOf(_cur_channel) != -1){
+						if(wl2.channel_80m[j].indexOf(_cur_channel) != 0){
 							_wl_channel.push(_cur_channel+"/80");
 						}
 					}
