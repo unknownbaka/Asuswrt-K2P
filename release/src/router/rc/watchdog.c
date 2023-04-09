@@ -5727,13 +5727,18 @@ static void auto_firmware_check()
 #endif
 
 		if(!nvram_contains_word("rc_support", "noupdate")){
+#if 0
 #if defined(RTL_WTDOG)
 			stop_rtl_watchdog();
 #endif
+
 			nvram_set("webs_update_trigger", "watchdog");
+#endif
 			eval("/usr/sbin/webs_update.sh");
+#if 0
 #if defined(RTL_WTDOG)
 			start_rtl_watchdog();
+#endif
 #endif
 		}
 #ifdef RTCONFIG_DSL
