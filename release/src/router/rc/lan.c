@@ -1799,7 +1799,8 @@ void update_subnet_rulelist(void){
 				sprintf(subnet_rulelist, "<%s>%s>%s>%s>%s>%s>%s>%s>%s>%s>%s", gateway,
 				nvram_safe_get("lan_netmask"), nvram_safe_get("dhcp_enable_x"), nvram_safe_get("dhcp_start"),
 				nvram_safe_get("dhcp_end"), nvram_safe_get("dhcp_lease"), nvram_safe_get("lan_domain"),
-				nvram_safe_get("dhcp_dns1_x"), nvram_safe_get("dhcp_wins_x"), nvram_safe_get("dhcp_static_x"), macipbinding);
+				nvram_safe_get("dhcp_dns1_x"), nvram_safe_get("dhcp_dns2_x"),
+				nvram_safe_get("dhcp_wins_x"), nvram_safe_get("dhcp_static_x"), macipbinding);
 				if(nvp != NULL){
 					tmpbuf = malloc(strlen(subnet_rulelist) + strlen(nvp) + 2);
 					sprintf(tmpbuf, "%s<", subnet_rulelist);
