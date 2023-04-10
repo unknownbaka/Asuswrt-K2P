@@ -97,15 +97,14 @@ RC_EXT_NO=0
 endif
 EXTENDNO1=$(shell git log --pretty=oneline asuswrt_$(KERNEL_VER).$(FS_VER).$(SERIALNO)..HEAD | wc -l)
 
-ifeq ($(BRANCH),)
 include ./router/extendno.conf
-else
+ifneq ($(BRANCH),)
 ifneq ($(EXTENDTYPE),)
 EXSTRING="-$(EXTENDTYPE)"
 else
 EXSTRING=
 endif
-export EXTENDNO := $(shell expr $(EXTENDNO1) + $(RC_EXT_NO))-g$(shell git log --pretty=format:'%h' -n 1|sed -e "s,\([0-9a-z]\{7\}\)[0-9a-z]*,\1,")$(EXSTRING)
+export EXTENDNO := $(shell echo $(EXTENDNO) | sed 's/\(.*\)-.*/\1/g')-g$(shell git log --pretty=format:'%h' -n 1|sed -e "s,\([0-9a-z]\{7\}\)[0-9a-z]*,\1,")$(EXSTRING)
 endif
 
 ifeq ($(EXTENDNO),)
@@ -397,7 +396,6 @@ endif
 	@echo '#endif' >> router/shared/version.h
 endif
 	@echo '$(BUILD_NAME)_$(KERNEL_VER).$(FS_VER) $(BUILD_TIME)' > router/shared/version
-	@echo 'EXTENDNO=$(EXTENDNO)' > router/extendno.conf
 
 rt_ver_ntools:
 	-@rm -f ntools/version
