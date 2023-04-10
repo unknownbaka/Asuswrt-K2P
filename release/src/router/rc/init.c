@@ -974,7 +974,8 @@ tagged_vlan_defaults(void)
 	sprintf(subnet_rulelist, "<%s>%s>%s>%s>%s>%s>%s>%s>%s>%s>%s", gateway,
 		nvram_default_get("lan_netmask"), nvram_default_get("dhcp_enable_x"), nvram_default_get("dhcp_start"),
 		nvram_default_get("dhcp_end"), nvram_default_get("dhcp_lease"), nvram_default_get("lan_domain"),
-		nvram_default_get("dhcp_dns1_x"), nvram_default_get("dhcp_wins_x"), nvram_default_get("dhcp_static_x"), dhcp_staticlist);
+		nvram_default_get("dhcp_dns1_x"), nvram_default_get("dhcp_dns2_x"),
+		nvram_default_get("dhcp_wins_x"), nvram_default_get("dhcp_static_x"), dhcp_staticlist);
 
 	nvram_set("subnet_rulelist", subnet_rulelist);
 }
