@@ -1146,7 +1146,8 @@ var validator = {
 				v == 'dhcp1_start' || v == 'dhcp1_end' ||
 				v == 'lan_ipaddr' || v == 'lan1_ipaddr' ||
 				v == 'staticip' || v == 'wl_radius_ipaddr' ||
-				v == 'dhcp_dns1_x' || v == 'dhcp_gateway_x' || v == 'dhcp_wins_x' ||
+				v == 'dhcp_dns1_x' || v == 'dhcp_dns2_x' ||
+				v == 'dhcp_gateway_x' || v == 'dhcp_wins_x' ||
 				v == 'sip_server'){
 			if((v!='wan_ipaddr_x')&& (v1==255||v4==255||v1==0||v4==0||v1==127||v1==224)){
 				if(v == 'wl_radius_ipaddr' && typeof(noAlert) != undefined && noAlert == 1){

@@ -112,6 +112,7 @@ function markGroup(o, s, c, b) {
 			!validate_ipaddr_final(document.form.dhcp_end, 'dhcp_end') ||
 			!validate_ipaddr_final(document.form.dhcp_gateway_x, 'dhcp_gateway_x') ||
 			!validate_ipaddr_final(document.form.dhcp_dns1_x, 'dhcp_dns1_x') ||
+			!validate_ipaddr_final(document.form.dhcp_dns2_x, 'dhcp_dns2_x') ||
 			!validate_ipaddr_final(document.form.dhcp_wins_x, 'dhcp_wins_x') ) return false;
 			
 			if (intoa(document.form.dhcp_start.value)>intoa(document.form.dhcp_end.value)){
@@ -972,7 +973,8 @@ function validate_ipaddr_final(o, v){
 			v == 'dhcp1_start' || v == 'dhcp1_end' ||
 			v == 'lan_ipaddr' || v == 'lan1_ipaddr' ||
 			v == 'staticip' || v == 'wl_radius_ipaddr' ||
-			v == 'dhcp_dns1_x' || v == 'dhcp_gateway_x' || v == 'dhcp_wins_x'){
+			v == 'dhcp_dns1_x' || v == 'dhcp_dns2_x' ||
+			v == 'dhcp_gateway_x' || v == 'dhcp_wins_x'){
 		if((v!='wan_ipaddr')&& (v1==255||v4==255||v1==0||v4==0||v1==127||v1==224)){
 			alert(o.value + ' <#JS_validip#>');
 			
