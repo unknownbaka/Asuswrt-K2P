@@ -568,7 +568,7 @@ function show_LAN_info(v){
 			document.getElementById("yadns_status").style.display = "";
 	}
 
-	showtext(document.getElementById("PINCode"), '<% nvram_get("secret_code"); %>');
+	showtext(document.getElementById("PINCode"), '<% nvram_get("wps_device_pin"); %>');
 	showtext(document.getElementById("MAC"), '<% get_lan_hwaddr(); %>');
 	showtext(document.getElementById("MAC_wl2"), '<% nvram_get("wl0_hwaddr"); %>');
 	if(document.form.wl_unit.value == '1')
