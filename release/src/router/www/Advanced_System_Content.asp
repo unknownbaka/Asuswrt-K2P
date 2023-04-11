@@ -598,7 +598,7 @@ function validForm(){
 	}
 
 	if(document.form.sshd_enable.value != 0){
-		if (!validator.range(document.form.sshd_port_x, 1, 65535))
+		if (!validator.range(document.form.sshd_port, 1, 65535))
 			return false;
 		else if(isPortConflict(document.form.sshd_port.value, "ssh")){
 			alert(isPortConflict(document.form.sshd_port.value, "ssh"));
@@ -606,7 +606,7 @@ function validForm(){
 			return false;
 		}
 		else{
-			document.form.sshd_port.value = document.form.sshd_port_x.value;
+			//document.form.sshd_port.value = document.form.sshd_port.value;
 			document.form.sshd_port.disabled = false;
 		}
 	}
@@ -630,13 +630,13 @@ function validForm(){
 		document.form.misc_httpsport_x.value = '<% nvram_get("misc_httpsport_x"); %>';
 	}
 
-	if(document.form.sshd_port_x.value == document.form.https_lanport.value){
+	if(document.form.sshd_port.value == document.form.https_lanport.value){
 		alert("<#SSH_HttpsLanPort_Conflict_Hint#>");
-		$("#sshd_port_x").addClass("highlight");
+		$("#sshd_port").addClass("highlight");
 		$("#port_conflict_sshdport").show();
 		$("#https_lanport_input").addClass("highlight");
 		$("#port_conflict_httpslanport").show();
-		document.form.sshd_port_x.focus();
+		document.form.sshd_port.focus();
 		return false;
 	}
 
@@ -1471,8 +1471,8 @@ function pullPingTargetList(obj){
 }
 
 function reset_portconflict_hint(){
-	if($("#sshd_port_x").hasClass("highlight"))
-		$("#sshd_port_x").removeClass("highlight");
+	if($("#sshd_port").hasClass("highlight"))
+		$("#sshd_port").removeClass("highlight");
 	if($("#https_lanport_input").hasClass("highlight"))
 		$("#https_lanport_input").removeClass("highlight");
 	$("#port_conflict_sshdport").hide();
@@ -1518,7 +1518,6 @@ function save_cert_key(){
 <input type="hidden" name="http_lanport" value="<% nvram_get("http_lanport"); %>">
 <input type="hidden" name="dns_probe" value="<% nvram_get("dns_probe"); %>">
 <input type="hidden" name="wandog_enable" value="<% nvram_get("wandog_enable"); %>">
-<input type="hidden" name="sshd_port" value="<% nvram_get("sshd_port"); %>" disabled>
 
 <table class="content" align="center" cellpadding="0" cellspacing="0">
   <tr>
@@ -1841,7 +1840,7 @@ function save_cert_key(){
 				<tr id="sshd_port_tr">
 					<th width="40%"><#Port_SSH#></th>
 					<td>
-						<input type="text" class="input_6_table" maxlength="5" id="sshd_port_x" name="sshd_port_x" onKeyPress="return validator.isNumber(this,event);" autocorrect="off" autocapitalize="off" value='<% nvram_get("sshd_port_x"); %>' onkeydown="reset_portconflict_hint();">
+						<input type="text" class="input_6_table" maxlength="5" id="sshd_port" name="sshd_port" onKeyPress="return validator.isNumber(this,event);" autocorrect="off" autocapitalize="off" value='<% nvram_get("sshd_port"); %>' onkeydown="reset_portconflict_hint();">
 						<span id="port_conflict_sshdport" style="color: #e68282; display: none;">Port Conflict</span>
 						<div style="color: #FFCC00;">* <#SSH_Port_Suggestion#></div>
 					</td>
