@@ -606,7 +606,7 @@ static uint32 boot_partition_size(uint32 flash_phys) {
 #define CRASHLOG_PARTS 0
 #endif
 /* boot;nvram;kernel;rootfs;empty */
-#define FLASH_PARTS_NUM	(9+MTD_PARTS+FAILSAFE_PARTS+CRASHLOG_PARTS)
+#define FLASH_PARTS_NUM	(7+MTD_PARTS+FAILSAFE_PARTS+CRASHLOG_PARTS)
 
 static struct mtd_partition bcm947xx_flash_parts[FLASH_PARTS_NUM] = {{0}};
 
@@ -805,7 +805,7 @@ init_mtd_partitions(hndsflash_t *sfl_info, struct mtd_info *mtd, size_t size)
 		}
 #endif
 
-		bcm947xx_flash_parts[nparts].size -= 0x130000;
+		bcm947xx_flash_parts[nparts].size -= 0x030000;
 		bcm947xx_flash_parts[nparts].offset = vmlz_off;
 		knl_size = bcm947xx_flash_parts[nparts].size;
 		offset = bcm947xx_flash_parts[nparts].offset + knl_size;
@@ -899,13 +899,6 @@ init_mtd_partitions(hndsflash_t *sfl_info, struct mtd_info *mtd, size_t size)
 	}
 #endif	/* BCMCONFMTD */
 
-	/* Setup data MTD partition */
-	bcm947xx_flash_parts[nparts].name = "data";
-	bcm947xx_flash_parts[nparts].size = mtd->erasesize * 16;
-	bcm947xx_flash_parts[nparts].offset = offset;
-	offset = bcm947xx_flash_parts[nparts].offset + bcm947xx_flash_parts[nparts].size;
-	nparts++;
-
 	/* Setup factory MTD partition */
 	bcm947xx_flash_parts[nparts].name = "factory";
 	bcm947xx_flash_parts[nparts].size = ROUNDUP(nvram_space, mtd->erasesize);
@@ -920,16 +913,9 @@ init_mtd_partitions(hndsflash_t *sfl_info, struct mtd_info *mtd, size_t size)
 	offset = bcm947xx_flash_parts[nparts].offset + bcm947xx_flash_parts[nparts].size;
 	nparts++;
 
-	/* Setup nvram_backup MTD partition */
-	bcm947xx_flash_parts[nparts].name = "nvram_backup";
-	bcm947xx_flash_parts[nparts].size = ROUNDUP(nvram_space, mtd->erasesize);
-	bcm947xx_flash_parts[nparts].offset = offset;
-	offset = bcm947xx_flash_parts[nparts].offset + bcm947xx_flash_parts[nparts].size;
-	nparts++;
-
 	/* Setup nvram MTD partition */
 	bcm947xx_flash_parts[nparts].name = "nvram";
-	bcm947xx_flash_parts[nparts].size = ROUNDUP(nvram_space, mtd->erasesize);
+	bcm947xx_flash_parts[nparts].size = ROUNDUP(nvram_space, mtd->erasesize) * 2;
 	bcm947xx_flash_parts[nparts].offset = size - bcm947xx_flash_parts[nparts].size;
 	nparts++;
 
