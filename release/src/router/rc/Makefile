@@ -975,7 +975,7 @@ ifeq ($(RTCONFIG_RALINK),y)
 endif
 
 ifneq ($(RTCONFIG_RALINK)$(RTCONFIG_QCA)$(RTCONFIG_REALTEK),y)
-	@cd $(INSTALLDIR)/sbin && ln -sf rc erp_monitor
+#	@cd $(INSTALLDIR)/sbin && ln -sf rc erp_monitor
 endif
 
 ifeq ($(RTCONFIG_AMAS),y)
