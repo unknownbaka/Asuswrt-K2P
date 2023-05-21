@@ -347,6 +347,9 @@ int vpnc_update_resolvconf(void)
 #ifdef RTCONFIG_YANDEXDNS
 	int yadns_mode = nvram_get_int("yadns_enable_x") ? nvram_get_int("yadns_mode") : YADNS_DISABLED;
 #endif
+#ifdef RTCONFIG_DNSPRIVACY
+	int dnspriv_enable = nvram_get_int("dnspriv_enable");
+#endif
 
 	lock = file_lock("resolv");
 
@@ -358,6 +361,12 @@ int vpnc_update_resolvconf(void)
 #ifdef RTCONFIG_YANDEXDNS
 	if (yadns_mode != YADNS_DISABLED) {
 		/* keep yandex.dns servers */
+		fp_servers = NULL;
+	} else
+#endif
+#ifdef RTCONFIG_DNSPRIVACY
+	if (dnspriv_enable) {
+		/* keep dns privacy servers */
 		fp_servers = NULL;
 	} else
 #endif
