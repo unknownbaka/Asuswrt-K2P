@@ -36,7 +36,7 @@ var timeout = 2000;
 var delay = 1000;
 var productid='<% nvram_get("productid"); %>';
 var wl_ssid_closed = "<% nvram_get("wl_closed"); %>";
-var curState = "<% nvram_get("wps_enable"); %>";
+var curState = '<% nvram_get("wps_enable"); %>';
 var radio_2 = '<% nvram_get("wl0_radio"); %>';
 var radio_5 = '<% nvram_get("wl1_radio"); %>';
 var band_string = "";
@@ -480,9 +480,14 @@ function show_wsc_status(wps_infos){
 	}
 	
 	// device's PIN code
-	document.getElementById("devicePIN_tr").style.display = "";
-	document.getElementById("devicePIN").value = wps_infos[7].firstChild.nodeValue;
-	
+	if(curState == "1") {
+		document.getElementById("devicePIN_tr").style.display = "";
+		document.getElementById("devicePIN").value = wps_infos[7].firstChild.nodeValue;
+	} else {
+		document.getElementById("devicePIN_tr").style.display = "none";
+		document.getElementById("devicePIN").style.display = "none";
+	}
+
 	// the input of the client's PIN code
 	document.getElementById("wpsmethod_tr").style.display = "";
 	if(wps_enable_old == "1"){
@@ -623,8 +628,13 @@ function show_wsc_status2(wps_infos0, wps_infos1){
 	}
 
 	// device's PIN code
-	document.getElementById("devicePIN_tr").style.display = "";
-	document.getElementById("devicePIN").value = wps_infos0[7].firstChild.nodeValue;
+	if(curState == "1") {
+		document.getElementById("devicePIN_tr").style.display = "";
+		document.getElementById("devicePIN").value = wps_infos[7].firstChild.nodeValue;
+	} else {
+		document.getElementById("devicePIN_tr").style.display = "none";
+		document.getElementById("devicePIN").style.display = "none";
+	}
 
 	// the input of the client's PIN code
 	document.getElementById("wpsmethod_tr").style.display = "";
