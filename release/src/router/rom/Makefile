@@ -70,6 +70,7 @@ certs-install: certs/ca-bundle.crt
 	install -d $(INSTALLDIR)/rom/etc/ssl/certs
 	install -m 0644 certs/ca-bundle.crt $(INSTALLDIR)/rom/etc/ssl/certs/ca-certificates.crt
 	sed -r '/^\s*(#|$$)/d;/\-BEGIN/{h;d};H;/\-END/{x;/\-BEGIN/p};d' -i $(INSTALLDIR)/rom/etc/ssl/certs/ca-certificates.crt
+	ln -s certs/ca-certificates.crt $(INSTALLDIR)/rom/etc/ssl/cert.pem
 
 install:
 	mkdir -p $(INSTALLDIR)
