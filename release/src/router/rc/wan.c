@@ -1940,6 +1940,9 @@ int update_resolvconf(void)
 #ifdef RTCONFIG_DUALWAN
 	int primary_unit = wan_primary_ifunit();
 #endif
+#ifdef RTCONFIG_DNSPRIVACY
+	int dnspriv_enable = nvram_get_int("dnspriv_enable");
+#endif
 
 	lock = file_lock("resolv");
 
@@ -1979,6 +1982,10 @@ int update_resolvconf(void)
 			do {
 #ifdef RTCONFIG_YANDEXDNS
 				if (yadns_mode != YADNS_DISABLED)
+					break;
+#endif
+#ifdef RTCONFIG_DNSPRIVACY
+				if (dnspriv_enable)
 					break;
 #endif
 #ifdef RTCONFIG_OPENVPN
@@ -2030,6 +2037,12 @@ int update_resolvconf(void)
 		}
 	}
 #endif
+#ifdef RTCONFIG_DNSPRIVACY
+	if (dnspriv_enable) {
+		fprintf(fp, "nameserver %s\n", "127.0.1.1");
+		fprintf(fp_servers, "server=%s\n", "127.0.1.1");
+	}
+#endif
 
 #ifdef RTCONFIG_IPV6
 	if (ipv6_enabled() && is_routing_enabled()) {
@@ -2069,6 +2082,10 @@ int update_resolvconf(void)
 				fprintf(fp_servers, "server=/%s/%s\n", "local", tmp);
 				continue;
 			}
+#endif
+#ifdef RTCONFIG_DNSPRIVACY
+			if (dnspriv_enable)
+				continue;
 #endif
 			fprintf(fp_servers, "server=%s\n", tmp);
 		}

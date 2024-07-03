@@ -734,6 +734,9 @@ ifneq ($(HND_ROUTER),y)
 obj-y += bridge
 endif
 obj-y += dnsmasq
+obj-${RTCONFIG_DNSPRIVACY} += openssl
+obj-${RTCONFIG_DNSPRIVACY} += libyaml
+obj-${RTCONFIG_DNSPRIVACY} += getdns
 ifneq ($(HND_ROUTER),y)
 obj-y += etc
 endif
@@ -2716,6 +2719,53 @@ dnsmasq:
 dnsmasq-install:
 	install -D dnsmasq/src/dnsmasq $(INSTALLDIR)/dnsmasq/usr/sbin/dnsmasq
 	$(STRIP) $(INSTALLDIR)/dnsmasq/usr/sbin/dnsmasq
+
+libyaml/configure:
+	cd libyaml && autoreconf -fi
+
+libyaml-configure: libyaml/configure
+	cd libyaml && \
+	$(CONFIGURE) --prefix=/usr --sysconfdir=/etc \
+		--enable-static --disable-shared \
+		CFLAGS="-Os -ffunction-sections -fdata-sections $(EXTRACFLAGS)" \
+		LDFLAGS="$(EXTRALDFLAGS)"
+
+libyaml: libyaml/Makefile
+	$(MAKE) -C $@ && $(MAKE) $@-stage
+
+libyaml-install:
+	@true
+
+libyaml-clean:
+	[ ! -f libyaml/Makefile ] || $(MAKE) -C libyaml distclean
+	@rm -f libyaml/Makefile
+
+getdns/configure:
+	cd getdns && libtoolize -ci && autoreconf -fi
+
+getdns-configure: getdns/configure
+	cd getdns && \
+	$(CONFIGURE) --prefix=/usr --sysconfdir=/etc --with-piddir=/var/run \
+		--enable-static --disable-shared --disable-gost \
+		--enable-stub-only --without-libidn --without-libidn2 \
+		--without-getdns_query --without-getdns_server_mon --with-stubby \
+		--with-ssl=$(TOP)/openssl \
+		--with-libyaml=$(STAGEDIR)/usr \
+		CFLAGS="-Os -I$(TOP)/openssl/include -I$(STAGEDIR)/usr/include -ffunction-sections -fdata-sections $(EXTRACFLAGS)" \
+		LDFLAGS="-L$(TOP)/openssl -L$(STAGEDIR)/usr/lib -Wl,--gc-sections $(EXTRALDFLAGS)" \
+		LIBS="-lcrypto -lssl -lyaml"
+
+getdns: openssl libyaml getdns/Makefile
+	$(MAKE) -C $@
+
+getdns-install:
+	install -d $(INSTALLDIR)/getdns/usr/sbin
+	install -D getdns/src/stubby $(INSTALLDIR)/getdns/usr/sbin/stubby
+	$(STRIP) $(INSTALLDIR)/getdns/usr/sbin/stubby
+
+getdns-clean:
+	[ ! -f getdns/Makefile ] || $(MAKE) -C getdns distclean
+	@rm -f getdns/Makefile
 
 iptables:
 	@$(SEP)
