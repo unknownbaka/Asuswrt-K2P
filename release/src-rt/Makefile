@@ -126,7 +126,7 @@ export SWPJEXTENDNO := $(shell git describe --match swpj_$(SWPJNAME)_$(SWPJVERNO
 ifneq ($(SWPJEXTENDNO),)
 export EXTENDNO := $(SWPJEXTENDNO)
 else
-export EXTENDNO := 0-g$(shell git log --pretty=format:'%h' -n 1|sed -e "s,\([0-9a-z]\{7\}\)[0-9a-z]*,\1,")
+export EXTENDNO := 0-g$(shell git log --pretty=format:'%h' -n 1 | sed -e "s,\([0-9a-z]\{7\}\)[0-9a-z]*,\1,")
 endif
 endif
 
@@ -200,7 +200,7 @@ uppercase_N = $(shell echo $(N) | tr a-z  A-Z)
 lowercase_N = $(shell echo $(N) | tr A-Z a-z)
 uppercase_B = $(shell echo $(BUILD_NAME) | tr a-z  A-Z)
 lowercase_B = $(shell echo $(BUILD_NAME) | tr A-Z a-z)
-BUILD_TIME := $(shell LC_ALL=C date -u)
+BUILD_TIME := $(shell LC_ALL=C date | tr -s ' ')
 BUILD_USER ?= $(shell whoami)
 BUILD_INFO := $(shell git log --pretty="%h" -n 1|sed -e "s,\([0-9a-z]\{7\}\)[0-9a-z]*,\1,")
 
@@ -395,7 +395,8 @@ else
 endif
 	@echo '#endif' >> router/shared/version.h
 endif
-	@echo '$(BUILD_NAME)_$(KERNEL_VER).$(FS_VER) $(BUILD_TIME)' > router/shared/version
+	@echo '$(BUILD_NAME)_$(KERNEL_VER).$(FS_VER).$(SERIALNO)_$(shell echo $(EXTENDNO) | sed 's/-g.*//') $(BUILD_TIME)' > router/shared/version
+	@echo 'EXTENDNO=$(EXTENDNO)' > router/extendno.conf
 
 rt_ver_ntools:
 	-@rm -f ntools/version
@@ -1222,6 +1223,14 @@ define RouterOptions
 	if [ "$(SFPRAM16M)" = "y" ]; then \
 		sed -i "/RTCONFIG_16M_RAM_SFP/d" $(1); \
 		echo "RTCONFIG_16M_RAM_SFP=y" >>$(1); \
+	fi; \
+	if [ "$(NO_UPNPC)" = "y" ]; then \
+		sed -i "/RTCONFIG_UPNPC/d" $(1); \
+		echo "# RTCONFIG_UPNPC is not set" >>$(1); \
+	fi; \
+	if [ "$(NO_BONJOUR)" = "y" ]; then \
+		sed -i "/RTCONFIG_BONJOUR/d" $(1); \
+		echo "# RTCONFIG_BONJOUR is not set" >>$(1); \
 	fi; \
 	if [ "$(AUTODICT)" = "y" ]; then \
 		sed -i "/RTCONFIG_AUTODICT/d" $(1); \
