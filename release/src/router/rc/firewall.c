@@ -3449,7 +3449,7 @@ TRACE_PT("writing Parental Control\n");
 //#if 0
 #ifdef RTCONFIG_IPV6
 	if (ipv6_enabled())
-	fprintf(fp_ipv6, "-A FORWARD -m state --state INVALID -j %s\n", logdrop);
+	fprintf(fp_ipv6, "-A FORWARD -m state --state INVALID -j %s\n", nvram_match("ipv6_fw_enable", "1") ? logdrop : logaccept);
 #endif
 //#endif
 	if (strlen(macaccept)>0)
@@ -3525,7 +3525,7 @@ TRACE_PT("writing Parental Control\n");
 
 		// default policy: DROP
 		// if logging
-		fprintf(fp_ipv6, "-A INPUT -j %s\n", logdrop);
+		fprintf(fp_ipv6, "-A INPUT -j %s\n", nvram_match("ipv6_fw_enable", "1") ? logdrop : logaccept);
 
 		// IPv6 firewall - allowed traffic
 		if (nvram_match("ipv6_fw_enable", "1")) {
@@ -4552,7 +4552,7 @@ TRACE_PT("writing Parental Control\n");
 
 		// default policy: DROP
 		// if logging
-		fprintf(fp_ipv6, "-A INPUT -j %s\n", logdrop);
+		fprintf(fp_ipv6, "-A INPUT -j %s\n", nvram_match("ipv6_fw_enable", "1") ? logdrop : logaccept);
 
 		// IPv6 firewall allowed traffic
 		if (nvram_match("ipv6_fw_enable", "1")) {
