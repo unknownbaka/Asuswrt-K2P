@@ -450,7 +450,7 @@ function initial(){
 		document.getElementById("DLSCapable").style.display = "none";	
 	}	
 
-	if(document.form.wl_nmode_x.value == "2"){    //Legacy
+	if(document.form.wl_nmode_x.value != "1"){    // not N only
 		var wme_array = ["<#Auto#>", "<#WLANConfig11b_WirelessCtrl_button1name#>", "<#WLANConfig11b_WirelessCtrl_buttonname#>"];
 		var wme_value = ["auto", "on", "off"];
 		inputCtrl(document.form.wl_frag, 1);
