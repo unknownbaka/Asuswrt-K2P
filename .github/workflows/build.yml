@@ -41,7 +41,7 @@ jobs:
           BUILD_DATE="$(date +%Y%m%d%H%M)"
           echo "ReleaseName=PHICOMM_K2P_${BUILD_DATE}" >> $GITHUB_OUTPUT
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         name: Upload
         with:
           name: ${{ steps.prepareArtifact.outputs.ReleaseName }}
